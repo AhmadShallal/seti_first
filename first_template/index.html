@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freight Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .hero .btn {
+            font-size: 1rem;
+            padding: 10px 20px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .feature-box {
+            margin-bottom: 40px;
+        }
+        .feature-box img {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+        .feature-box h5 {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .feature-box p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        /* Order Form Section */
+        .order-form-section {
+            background: #fff;
+            padding: 80px 20px;
+        }
+        .form-container {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .form-container .btn {
+            font-size: 1rem;
+            padding: 10px 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Freight Off Your Plate</h1>
+        <p>Cartage is a freight-as-a-service platform for shippers that streamlines the work of freight coordination.</p>
+        <button class="btn btn-primary">Learn More</button>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 feature-box">
+                <img src="img/2.jpg" alt="Feature 1">
+                <h5>Network Infrastructure</h5>
+                <p>Design, manage, and optimize your IT networks for seamless operations.</p>
+            </div>
+            <div class="col-md-4 feature-box">
+                <img src="img/1.jpg" alt="Feature 2">
+                <h5>IT Security Solutions</h5>
+                <p>Protect your business with our cutting-edge cybersecurity services.</p>
+            </div>
+            <div class="col-md-4 feature-box">
+                <img src="img/3.jpg" alt="Feature 3">
+                <h5>Data Backup Solutions</h5>
+                <p>Secure and recover your business-critical data with ease.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Order Form Section -->
+<section class="order-form-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-container">
+                    <h3>Order Your Solution</h3>
+                    <form action="send_email.php" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mobile" class="form-label">Mobile</label>
+                            <input type="tel" class="form-control" id="mobile" name="mobile" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" name="city" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="product" class="form-label">Product</label>
+                            <select class="form-select" id="product" name="product" required>
+                                <option value="Network Infrastructure">Network Infrastructure</option>
+                                <option value="IT Security Solutions">IT Security Solutions</option>
+                                <option value="Data Backup Solutions">Data Backup Solutions</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Freight Solutions | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
